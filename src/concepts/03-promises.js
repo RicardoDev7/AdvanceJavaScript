@@ -5,7 +5,14 @@ import { heroes } from "../data/heroes"
  * @param {HTMLDivElement} element 
  */
 export const promiseComponent = (element) => {
-    const algo = findHero('5d86371f2343e37870b91ef1');
+    const renderHero = (hero) => {
+        element.innerHTML = hero.name;
+    }
+    const renderError = (error) => {
+        element.innerHTML = `<h3>${error}</h3>`;
+    }
+    const heroID = '5d86371f97c29d020f1e1f6d';
+    findHero(heroID).then(renderHero).catch(renderError);
 }
 
 /**
