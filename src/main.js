@@ -1,7 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { promiseRaceComponent } from './concepts/04-promise-race';
+import { asyncComponent } from './concepts/05-async';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -19,4 +19,4 @@ document.querySelector('#app').innerHTML = `
 `
 
 const element = document.getElementById('divCard');
-promiseRaceComponent(element);
+asyncComponent(element);
