@@ -1,7 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { asyncComponent } from './concepts/05-async';
+import { asyncAwaitComponent } from './concepts/06-async-await';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -19,4 +19,4 @@ document.querySelector('#app').innerHTML = `
 `
 
 const element = document.getElementById('divCard');
-asyncComponent(element);
+asyncAwaitComponent(element);
