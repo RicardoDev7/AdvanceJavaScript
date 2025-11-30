@@ -1,7 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { asyncAwaitSecuncialComponent } from './concepts/07-async-await-secuncial';
+import { forAwaitComponent } from './concepts/08-for-await';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -19,4 +19,4 @@ document.querySelector('#app').innerHTML = `
 `
 
 const element = document.getElementById('divCard');
-asyncAwaitSecuncialComponent(element);
+forAwaitComponent(element);
