@@ -1,7 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { forAwaitComponent } from './concepts/08-for-await';
+import { generatorFunctionComponent } from './concepts/09-generators';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -19,4 +19,4 @@ document.querySelector('#app').innerHTML = `
 `
 
 const element = document.getElementById('divCard');
-forAwaitComponent(element);
+generatorFunctionComponent(element);
