@@ -1,7 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { generatorFunctionComponent } from './concepts/09-generators';
+import { generatorAsyncComponent } from './concepts/10-generator-async';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -19,4 +19,4 @@ document.querySelector('#app').innerHTML = `
 `
 
 const element = document.getElementById('divCard');
-generatorFunctionComponent(element);
+generatorAsyncComponent(element);

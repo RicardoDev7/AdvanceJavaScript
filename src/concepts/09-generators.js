@@ -22,7 +22,6 @@ export const generatorFunctionComponent = (element) => {
     button.innerText = `Click ${value}`;
    }
    button.addEventListener('click', renderButton);
-
 }
 
 /**
